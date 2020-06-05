@@ -12,6 +12,9 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Product {
+
     private Long id;
-    private BigDecimal price;
+
+    @Builder.Default
+    private BigDecimal price = new BigDecimal(0);
 }
